@@ -1,4 +1,5 @@
 import Stories from "./pages/stories.js";
+import Item from "./components/Item.js";
 
 const router = new Navigo(null, true, "#");
 
@@ -13,6 +14,7 @@ export default class RouterHandler {
             { path: '/new', page: Stories },
             { path: '/ask', page: Stories },
             { path: '/show', page: Stories },
+            { path: '/item', page: Item }
         ];
 
         routes.forEach(({path, page}) => {
