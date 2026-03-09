@@ -2,7 +2,7 @@ import view from "../utils/view.js"
 import baseUrl from '../utils/baseUrl.js'
 import Story from "../components/Story.js";
 
-export default async function Stories(path) {
+export default async function Stories(path) { 
     const stories = await getStories(path);
     const hasStories = stories.length > 0;
 
